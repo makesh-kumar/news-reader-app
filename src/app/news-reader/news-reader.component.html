@@ -1,0 +1,33 @@
+<div class="news__section">
+  <div class="section__category">
+    <mat-form-field appearance="fill">
+      <mat-label>News Category</mat-label>
+      <mat-select disableRipple>
+        <ng-container *ngFor="let item of newsCategory">
+          <mat-option (click)="getNewsOf(item.id)" default value="All">{{item.value}}</mat-option>
+        </ng-container>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="section__content">
+    <ng-container *ngFor="let item of news">
+      <div class="content__news">
+        <mat-card>
+          <div class="news__title">
+            <p>{{item.title}}</p>
+          </div>
+          <div class="news__image">
+            <img src={{item.urlToImage}}>
+          </div>
+          <div class="news__body">
+            {{item.description}}
+            <a target="_blank" href={{item.url}}>..read more</a>
+          </div>
+          <div class="news__source">
+            <p>Source : {{item.source.name}}</p>
+          </div>
+        </mat-card>
+      </div>
+    </ng-container>
+  </div>
+</div>
