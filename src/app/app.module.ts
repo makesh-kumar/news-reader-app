@@ -3,7 +3,7 @@ import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NewReaderComponent } from './news-reader/news-reader.component';
-import { ApiService } from './services/api.service';
+import { ApiService } from './Services/api.service';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { INews, INewsCategory } from '../Modal/news';
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../Services/api.service';
 import { ToastrService } from 'ngx-toastr';
 import { HttpErrorResponse } from '@angular/common/http';
 @Component({
